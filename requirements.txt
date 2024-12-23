@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+hdbscan
+sentence-transformers
+numpy==1.24.3
+umap-learn==0.5.3
+pydantic
+scikit-learn==1.2.2

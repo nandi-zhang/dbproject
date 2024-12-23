@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-input-wrapper">
+            <textarea 
+                id="searchInput" 
+                placeholder="Enter your search query here..."
+            ></textarea>
+        </div>
+        <div class="limit-container">
+            <label class="limit-label">Papers to fetch:</label>
+            <input 
+                type="number" 
+                id="papersLimit" 
+                value="30" 
+                min="1" 
+                max="100"
+            >
+        </div>
+        <button id="searchButton">Search</button>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="plot"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="cluster-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="api.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
