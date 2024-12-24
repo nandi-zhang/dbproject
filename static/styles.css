@@ -9,8 +9,8 @@
     max-width: 90%;
 }
 #plot-container {
-    width: 500px; /* Take full width */
-    height: 500px; /* Adjust height as needed */
+    width: 300px; /* Take full width */
+    height: 300px; /* Adjust height as needed */
     position: relative; /* Remove sticky positioning */
 }
 .controls {
